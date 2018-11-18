@@ -1,5 +1,8 @@
 package linkedLists;
 
+/**
+ * Class to implement one node of a singly-linked list queue
+ * */
 public class QueueNode <E>
 {
    /**
@@ -10,7 +13,7 @@ public class QueueNode <E>
    private QueueNode next;
 
    /**
-    * The default construtor sets the data and next fields to null
+    * The default constructor sets the data and next fields to null
     */
    public QueueNode ()
    {
@@ -28,21 +31,31 @@ public class QueueNode <E>
    }
 
    //getters and setters
+   /**
+    * return data field of the QueueNode
+    * */
    public E getData() {
 	   return data;
    }
 
+   /**
+    * sets data field of the QueueNode
+    * */
    public void setData(E data) {
 	   this.data = data;
    }
 
+   /**
+    * return next field of the QueueNode
+    * */
    public QueueNode getNext() {
 	   return next;
    }
 
+   /**
+    * sets next field of the QueueNode
+    * */
    public void setNext(QueueNode next) {
 	   this.next = next;
    }
-
-
 }
